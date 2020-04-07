@@ -6,7 +6,6 @@ struct day{
     int price;
 };
 
-//마지막날에 1일짜리 상담을 할수있는거냐?
 int main() {
     int n;
     vector<day> schedule;
@@ -26,14 +25,9 @@ int main() {
             ja=schedule[j].a;
             jb=schedule[j].b;
             jprice=schedule[j].price;
-            //for(int k=0;k<=n;k++){cout<<distance[k+1]<<" ";}
-            //cout<<endl;
             distance[jb]=max(distance[jb],distance[ja]+jprice);
-        }
-        
+        }   
     }
-    
     cout<<distance[n+1];
     return 0;
 }
-
