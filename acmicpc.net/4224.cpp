@@ -25,7 +25,11 @@ int low(int n){
 string pyramidToString(pyramid p){
     return to_string(p.lobby)+(p.isHigh?"H":"L");
 }
-
+void addtoString(String s, pyramid p){
+    s.append(" ");
+    s.append(pyramidToString(p));
+    return;
+}
 void pyramidLister(){
     int index=0;
     //H 피라미드
@@ -49,8 +53,11 @@ int main(){
     while(){
         cin>>n;
         if(n<=0)break;
+        String result="";
 
-        cout<<"Case "<<case_<<": ";
+        cout<<"Case "<<case_<<":";
+        cout<<result;
+        cout<<"\n";
         solve(n);
 
         case_++;

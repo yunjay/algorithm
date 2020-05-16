@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//스타벅스에서 이상한 냄새 난다
 int main() {
     int n;
     int arr[10000];//inputs
