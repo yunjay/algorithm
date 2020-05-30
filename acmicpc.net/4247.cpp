@@ -16,14 +16,6 @@ bool hasWon(char grid[][3], char X){
         return true;
     return false;
 }
-void printGrid(char grid[][3]){
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cout<<grid[i][j]<<" ";
-        }
-        cout<<"\n";
-    }
-}
 int main(){
     int n;
     cin>>n;
@@ -39,15 +31,12 @@ int main(){
                 grid[j][k]=c;
             }
         }
-        //printGrid(grid);
         if(O>X || X>O+1)cout<<"no\n"; //X가 선공
         else if(hasWon(grid,'O')&&hasWon(grid,'X')
                 ||hasWon(grid,'O') && X!=O
                 ||hasWon(grid,'X') && X!=O+1
-                ){
-                    cout<<"no\n";
-                }
-        else cout<<"yes\n";        
+                ){  cout<<"no\n";   }
+        else cout<<"yes\n";
     }
     return 0;
 }

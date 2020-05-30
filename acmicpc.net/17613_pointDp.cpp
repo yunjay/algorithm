@@ -50,7 +50,6 @@ int main() {
             int tmp = dp(i);
             maxi = max(tmp, maxi);
         }
-        
         cout << maxi << "\n";
     }
     return 0;

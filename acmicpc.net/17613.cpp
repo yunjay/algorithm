@@ -8,6 +8,7 @@ using namespace std;
 map<pair<long long, long long>, int> jump;
 
 int dp(long long l, long long r){
+    //있으면 반환
 	if(jump.find({l, r}) != jump.end()) return jump[{l, r}];
 
 	int result=0;
@@ -20,7 +21,7 @@ int dp(long long l, long long r){
         if(closedLeft>r)break;
 		long long closedRight = (1ll << (i+1)) - 2; //2^(i+1) - 2
 		closedLeft = max(l, closedLeft);    //컷팅
-        closedRight = min(r, closedRight);  //컷컷컷
+        closedRight = min(r, closedRight);  //컷
         //점프해서 이동
         //구간 벗어나면 밑에꺼가 성립 안됌. min r로 인해서
 		if(closedLeft <= closedRight) {
