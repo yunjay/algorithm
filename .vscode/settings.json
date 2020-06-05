@@ -5,6 +5,11 @@
         "vector": "cpp",
         "xutility": "cpp",
         "xstring": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "ios": "cpp",
+        "system_error": "cpp",
+        "xiosbase": "cpp",
+        "xtree": "cpp",
+        "queue": "cpp"
     }
 }
