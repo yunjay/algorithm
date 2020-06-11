@@ -3,6 +3,7 @@ using namespace std;
 
 
 int main(){
+    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     vector <pair<int,int>> lines; 
     int n;
     int length=0;
